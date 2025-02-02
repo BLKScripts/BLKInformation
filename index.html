@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLK Scripts - About Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap&family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            background: url('https://images.pexels.com/photos/8991520/pexels-photo-8991520.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+        }
+        .logo img {
+            height: 50px; /* Adjust size as needed */
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 100px);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .main-text {
+            font-size: 2rem;
+            margin-bottom: 20px; /* Adjust the margin to move the text slightly up */
+        }
+        .info-text {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 40px;
+        }
+        .primary-btn, .secondary-btn, .blue-btn {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin: 10px;
+        }
+        .blue-btn {
+            background-color: rgb(69, 141, 201);
+            border: 2px solid rgb(255, 255, 255);
+        }
+        .primary-btn:hover, .secondary-btn:hover {
+            background-color: white;
+            color: black;
+        }
+        .blue-btn:hover {
+            background-color: lightblue;
+            border: 2px solid rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="https://i.pinimg.com/1200x/d7/b0/37/d7b037bc86c2a08528c525fb1ca6bae3.jpg" alt="Logo" onclick="goToMainPage()">
+        </div>
+    </div>
+    <div class="container">
+        <div class="main-text">What do we do?</div>
+        <div class="info-text">BLK is your trusted platform for high-quality scripts tailored for your needs. Our experienced and active staff team is dedicated to providing top-tier scripts and excellent customer support. We strive to ensure a smooth and secure experience for our customers, making exploiting easy and accessible.</div>
+        <button class="blue-btn" onclick="joinDiscord()">Join Discord Server</button>
+        <button class="secondary-btn" onclick="goToMainPage()">Go to main page</button>
+    </div>
+
+    <script>
+        // Function to navigate to the main page
+        function goToMainPage() {
+            window.location.href = 'https://blkscripts.github.io/BLK-Scripts/'; // Adjust this URL if your main page is named differently
+        }
+
+        // Function to join the Discord server
+        function joinDiscord() {
+            window.location.href = 'https://discord.gg/gXG2pjtpft';
+        }
+    </script>
+</body>
+</html>
